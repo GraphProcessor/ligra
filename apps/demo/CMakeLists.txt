@@ -3,3 +3,5 @@ foreach (exec_file BFS BC BellmanFord Components Radii PageRank PageRankDelta BF
     target_include_directories(${exec_file} PUBLIC "../../ligra")
 endforeach ()
 
+add_executable(encoder ../../ligra/encoder.C)
+target_include_directories(encoder PUBLIC "../../ligra")
